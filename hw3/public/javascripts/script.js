@@ -1,3 +1,5 @@
+// Aaron Stoll stoll23@up.edu
+
 function isVegan() {		// Called on order button press
     let topSelect = false;
     let orderedText = "Thank you! Your order has been placed.";	// create string for post order text
