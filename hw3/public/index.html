@@ -1,0 +1,108 @@
+<!-- Aaron Stoll (stoll23@up.edu) -->
+
+<!DOCTYPE html>
+<html>
+	<head>	
+		 <script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+ 		 </script>
+
+		 <script>
+			src="/javascripts/script.js"
+		 </script>
+		
+		<link rel="stylesheet" href="/stylesheets/style.css">					
+		<title>Cheesecake Order Form</title>	<!-- Main Page Title -->
+	</head>
+	<body>
+
+		<h1>Cheesecake Order Form</h1>		<!-- Large Text Title -->
+
+		
+	
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg/1200px-Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" 
+		width="300" height="330">
+		
+		<!-- Cheese Cake Img from Wikimedia sized properly ^ -->
+		
+		<table>
+			<tr> <p id="TopText">Quantity Topping</p> </tr>
+			<tr><td><table><thread>					<!-- Column 1 -->
+
+				<select name="QuantityTopping" id="QuantityTopping">
+				     <option value="1">1</option>
+				     <option value="2">2</option>
+				     <option value="3">3</option>
+				     <option value="4">4</option>
+				     <option value="5">5</option>
+				</select>
+										<!-- Quantity selector from 1 to 5 -->
+			</thread></table></td>
+			<td><table><thread>					<!-- Column 2 -->
+				<tr><td> 
+				     <input type="Radio" name="Plain" id="Plain" value="Plain"> <label for="Plain">Plain</label> 
+			     	</td></tr>
+			        <tr><td> 
+				     <input type="Radio" name="Cherry" id="Cherry" value="Cherry"> <label for="Cherry">Cherry</label>
+			        </td></tr>
+			        <tr><td> 
+				     <input type="Radio" name="Chocolate" id="Chocolate" value="Chocolate"> <label for="Chocolate">Chocolate</label>
+			        </td></tr>
+										<!-- Flavor Selection Options -->
+			</thread></table></td></tr>
+
+
+		</table>		
+		
+		<form>
+  			<p><label for="NotesBox">Notes:</label></p>
+  			<textarea id="NotesBox" name="NotesBox" rows="4" cols="50" placeholder="Enter any special instructions here."></textarea>
+  	
+		</form>			<!-- Form text box with placeholder text to instruct user -->
+
+		<br>
+		<button type="button" id="OrderButton" onclick="isVegan()">Order</button>		<!-- button to submit order -->
+		
+		<div id="MonthHeading">
+
+		  <h3> Orders For     </h3>
+		  <div class="dropdown">			<!-- class to represent all of the dropdown elements -->
+
+		    <button class="dropbtn"> Jan </button>	<!-- button for hover drop down -->
+		    <div class="dropdown-content">		<!-- content class contains all dropdown options -->
+		      <a href="#" id="Jan">Jan</a>
+		      <a href="#" id="Feb">Feb</a>
+		      <a href="#" id="Mar">Mar</a>
+		      <a href="#" id="Apr">Apr</a>
+		      <a href="#" id="May">May</a>
+		      <a href="#" id="Jun">Jun</a>
+		      <a href="#" id="Jul">Jul</a>
+		      <a href="#" id="Aug">Aug</a>
+		      <a href="#" id="Sep">Sep</a>
+		      <a href="#" id="Oct">Oct</a>
+		      <a href="#" id="Nov">Nov</a>
+		      <a href="#" id="Dec">Dec</a>
+		    </div>
+
+		  </div>
+		</div>
+								<!-- Previous month data displayed as bulleted list -->
+		<ul>
+		  <li>11 cherry</li>
+		  <li>17 chocolate</li>
+		  <li>31 plain</li>
+		</ul>
+
+
+
+
+		
+		<!-- Dropdown from: https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+
+	</body>
+</html>
+
+
+
+
+

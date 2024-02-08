@@ -1,0 +1,83 @@
+/* Aaron Stoll (stoll23@up.edu) */
+
+* {
+	
+}
+
+body{				/* format page to be multicolored red and creme */
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    beige 0%,
+    beige 50%,
+    crimson 50%,
+    crimson 100%
+  );
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkred
+}
+
+h3 { 
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkred
+}
+
+p {
+  font-family: "Lucida Console", "Courier New", monospace;		/* set fonts of multiple lines of text */
+}
+
+
+#MonthHeading{		/* format month text as flex box with button so it can look like one line of text */
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  align-items: center;		
+}
+
+
+.dropbtn {		/* formatting for the month button itself */
+  background-color: BlanchedAlmond;
+  color: DarkRed;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  font-size: 19px;
+  font-weight: bold;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {		/* overflow set to auto with a fixed height for scrollbar of a smaller section of list */
+  display: none;
+  position: absolute;
+  background-color: BlanchedAlmond;
+  min-width: 60px;
+  height: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  overflow: auto;
+}
+
+.dropdown-content a {
+  color: DarkRed;
+  font-family: Arial, Hevletica, sans-serif;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: BurlyWood;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: BlanchedAlmond;}
+
+
+
